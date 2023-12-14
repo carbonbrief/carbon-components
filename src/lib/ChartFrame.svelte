@@ -37,14 +37,6 @@
 		color:var(--custom-colour, black);
   }
 
-	.chart-frame.stack > * {
-		margin-block: 0;
-	}
-
-	.chart-frame.stack > * + * {
-		margin-block-start: 1.5rem;
-	}
-
   .chart-frame.stack {
 		display: inline-flex;
 		flex-direction: column;
@@ -102,8 +94,8 @@
 
 	h2.title{
 		font-size: 1.375rem;
-		font-weight: bold;
 		line-height: 1.25;
+		font-weight: bold;
 		word-wrap: break-word;
     white-space: normal;
 	}

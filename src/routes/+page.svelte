@@ -9,5 +9,6 @@
 <h1>Carbon components</h1>
 <ul>
   <li><a href="Logo">Logo</a></li>
-  <!-- NEW COMPONENTS -->
+  	<li><a href="ChartFrame">ChartFrame</a></li>
+<!-- NEW COMPONENTS -->
 </ul>

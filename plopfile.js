@@ -27,7 +27,7 @@ export default function (plop) {
       type: 'modify',
     },{
       path: 'src/routes/+page.svelte',
-      pattern: /<!-- NEW COMPONENTS -->/g,
+      pattern: /(<!-- NEW COMPONENTS -->)/g,
       template: '\t<li><a href="{{name}}">{{name}}</a></li>\n$1',
       type: 'modify',
     },]

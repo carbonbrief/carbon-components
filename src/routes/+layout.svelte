@@ -3,7 +3,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Sans+Narrow:wght@400;700&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">    
 </svelte:head>
-<a href="/">/Carbon Components</a>
+<a href="/">/Carbon component system</a>
   <slot></slot>
-<hr>
-<a href="/">home</a>
+<div class="page-footer">
+
+</div>
+
+<style>
+  .page-footer{
+
+  }
+</style>

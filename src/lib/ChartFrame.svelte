@@ -27,23 +27,14 @@
 </section>
 
 <style>
-  :root{
-    --s-5: calc(var(--s-4) / var(--ratio));
-    --s-4: calc(var(--s-3) / var(--ratio));
-    --s-3: calc(var(--s-2) / var(--ratio));
-    --s-2: calc(var(--s-1) / var(--ratio));
-    --s-1: calc(var(--s0) / var(--ratio));
-    --s0: 1rem;
-    --s1: calc(var(--s0) * var(--ratio));
-    --s2: calc(var(--s1) * var(--ratio));
-    --s3: calc(var(--s2) * var(--ratio));
-    --s4: calc(var(--s3) * var(--ratio));
-    --s5: calc(var(--s4) * var(--ratio));
-  }
-
   .chart-frame{
-		font-family: var(--sans-serif, 'PT-sans', sans-serif);
-    max-width: var(--readable-max-width, 800px);
+		font-family: 'PT sans', sans-serif;
+    max-width: 800px;
+    margin:0;
+		padding:1px;
+		position: relative;
+		background-color: var(--custom-bg, white);
+		color:var(--custom-colour, black);
   }
 
 	.chart-frame.stack > * {
@@ -51,7 +42,7 @@
 	}
 
 	.chart-frame.stack > * + * {
-		margin-block-start: var(--s0, 1.5rem);
+		margin-block-start: 1.5rem;
 	}
 
   .chart-frame.stack {
@@ -63,14 +54,14 @@
 	.chartfooter{
 		display: flex;
 		flex-direction: row;
-		max-width: var(--readable-max-width, 800);
+		max-width: 800px;
 		justify-content: space-between;
 	}
 	.chartfooter.footerAdjust{
 		background-color: var(--custom-bg, white);
 		margin-top: var(--footer-offset);
 	}
-  
+
 	.logo-container{
 		display: flex;
 		flex-direction: row;
@@ -83,19 +74,10 @@
 		width:100%;
 	}
 
-	.chart-frame {
-		margin:0;
-		padding:1px;
-		position: relative;
-		max-width: var(--readable-max-width, 800);
-		background-color: var(--custom-bg, white);
-		color:var(--custom-colour, black);
-	}
-
 	.source {
 		font-size: 0.8rem;
-		color: var(--custom-colour, grey);
-		line-height: var(--s1);
+		color: #888;
+		line-height: 1rem;
 		white-space: normal;
 	}
 
@@ -118,9 +100,9 @@
     white-space: normal;
 	}
 
-	h2{
+	h2.title{
 		font-size: 1.375rem;
-		font-weight: 700;
+		font-weight: bold;
 		line-height: 1.25;
 		word-wrap: break-word;
     white-space: normal;

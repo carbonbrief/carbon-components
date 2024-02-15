@@ -1,15 +1,17 @@
 <script>
-	import Logo from "$lib/Logo.svelte";
+	import Logo from '$lib/Logo.svelte';
 
 	export let title = 'CHART TITLE';
 	export let subtitle = 'chart subtitle';
 	export let source = 'Carbon Brief';
-	export let footerAdjust = "0em";
+	export let footerAdjust = '0em';
 	export let lightLogo = false;
-
 </script>
 
-<section class="chart-frame stack" style="--footer-offset:{footerAdjust?"-"+footerAdjust:"0em"}">
+<section
+	class="chart-frame stack"
+	style="--footer-offset:{footerAdjust ? '-' + footerAdjust : '0em'}"
+>
 	<div>
 		<h2 class="title">{@html title}</h2>
 		{#if subtitle != ''}<p class="subtitle">{@html subtitle}</p>{/if}
@@ -17,53 +19,53 @@
 	<div class="graphic stack">
 		<slot />
 	</div>
-	<div class="chartfooter" class:footerAdjust={footerAdjust}>
+	<div class="chartfooter" class:footerAdjust>
 		<div class="footer-text source">
-			<span class="source">Source:</span> {source}
+			<span class="source">Source:</span>
+			{source}
 		</div>
-		<div class="logo-container"><Logo light={lightLogo}></Logo></div>
+		<div class="logo-container"><Logo light={lightLogo} /></div>
 	</div>
-	
 </section>
 
 <style>
-  .chart-frame{
+	.chart-frame {
 		font-family: 'PT sans', sans-serif;
-    max-width: 800px;
-    margin:0;
-		padding:1px;
+		max-width: 800px;
+		margin: 0;
+		padding: 1px;
 		position: relative;
 		background-color: var(--custom-bg, white);
-		color:var(--custom-colour, black);
-  }
+		color: var(--custom-colour, black);
+	}
 
-  .chart-frame.stack {
+	.chart-frame.stack {
 		display: inline-flex;
 		flex-direction: column;
 		justify-content: flex-start;
 	}
-	
-	.chartfooter{
+
+	.chartfooter {
 		display: flex;
 		flex-direction: row;
 		max-width: 800px;
 		justify-content: space-between;
 	}
-	.chartfooter.footerAdjust{
+	.chartfooter.footerAdjust {
 		background-color: var(--custom-bg, white);
 		margin-top: var(--footer-offset);
 	}
 
-	.logo-container{
+	.logo-container {
 		display: flex;
 		flex-direction: row;
-		justify-content:end;
+		justify-content: end;
 		width: 140px;
 		text-align: right;
 	}
 
-	.footer-text{
-		width:100%;
+	.footer-text {
+		width: 100%;
 	}
 
 	.source {
@@ -73,8 +75,8 @@
 		white-space: normal;
 	}
 
-	span.source{
-		font-weight:700;
+	span.source {
+		font-weight: 700;
 	}
 
 	.subtitle,
@@ -83,41 +85,40 @@
 		font-weight: normal;
 	}
 
-	.subtitle{
+	.subtitle {
 		font-size: 1rem;
 		color: #666666;
 		color: var(--custom-colour, grey);
 		line-height: normal;
 		word-wrap: break-word;
-    white-space: normal;
+		white-space: normal;
 	}
 
-	h2.title{
+	h2.title {
 		font-size: 1.375rem;
 		line-height: 1.25;
 		font-weight: bold;
 		word-wrap: break-word;
-    white-space: normal;
+		white-space: normal;
 	}
 
 	@media only screen and (max-width: 620px) {
-		.title{
+		.title {
 			font-size: var(--s1);
 			line-height: var(--s1);
 		}
-    .subtitle, .source{
+		.subtitle,
+		.source {
 			font-size: var(--s0);
 			line-height: var(--s0);
 		}
 	}
 
 	@media only screen and (max-width: 500px) {
-    .subtitle{
+		.subtitle {
 			font-size: var(--s0);
 			line-height: var(--s0);
 			margin-top: var(--s-1);
 		}
 	}
-
-
 </style>

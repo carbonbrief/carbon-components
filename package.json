@@ -4,10 +4,11 @@
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint .",
 		"preview": "vite preview",
 		"package": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "npm run package",
-		"lint": "eslint .",
 		"plop": "plop"
 	},
 	"exports": {
@@ -31,6 +32,8 @@
 		"eslint": "^8.28.0",
 		"eslint-plugin-svelte": "^2.30.0",
 		"plop": "^4.0.0",
+		"prettier": "^2.6.2",
+		"prettier-plugin-svelte": "^2.7.0",
 		"publint": "^0.1.9",
 		"svelte": "^4.2.7",
 		"tslib": "^2.4.1",
@@ -39,5 +42,6 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module"
+	"type": "module",
+	"dependencies": {}
 }

@@ -1,23 +1,23 @@
 <script>
-  import {Logo} from "$lib";
+	import { Logo } from '$lib';
 </script>
 
 <h1>Logo</h1>
 <pre>{`<Logo></Logo>`}</pre>
-<Logo></Logo>
+<Logo />
 <pre>{`<Logo monochrome={true}></Logo>`}</pre>
-<Logo monochrome={true}></Logo>
+<Logo monochrome={true} />
 <pre>{`<Logo light={true}></Logo>`}</pre>
 <div class="dark">
-  <Logo light={true}></Logo>
+	<Logo light={true} />
 </div>
 <pre>{`<Logo light={true} monochrome={true}></Logo>`}</pre>
 <div class="dark">
-  <Logo light={true} monochrome={true}></Logo>
+	<Logo light={true} monochrome={true} />
 </div>
 
 <style>
-  .dark{
-    background-color: black;
-  }
+	.dark {
+		background-color: black;
+	}
 </style>

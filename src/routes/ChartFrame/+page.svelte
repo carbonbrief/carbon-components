@@ -1,5 +1,5 @@
 <script>
-  import ChartFrame from "$lib/ChartFrame.svelte";
+  import {ChartFrame} from "$lib";
 </script>
 <h1>ChartFrame</h1>
 <ChartFrame title="Chart title" subtitle="Chart subtitle (including units)">

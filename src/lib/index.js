@@ -4,7 +4,7 @@ import ChartFrame from "./ChartFrame.svelte";
 
 // Reexport your entry components here
 export {
-  Logo
+  Logo,
 	ChartFrame,
 // COMPONENT EXPORTS
 };

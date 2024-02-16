@@ -1,6 +1,19 @@
 <script>
-	import {LinearAxes, GlobalStyle} from '$lib';
+	import { LinearAxes } from '$lib';
+	import PropertyList from '$lib/docs/PropertyList.svelte';
 	import * as d3 from 'd3';
+
+	let props = {
+		plotHeight:{default:500,description:''},
+		plotWidth:{default:1000,description:''},
+		margin:{default:"{ top: 0, left: 0, bottom: 0, right: 0 }", description:""},
+		yScale:{default:"(d) => d", description:''},
+		xScale:{default:"(d) => d", description:''},
+		yFormat:{default:"(d) => d", description:''},
+		xFormat:{default:"(d) => d", description:''},
+		yTickCount:{default:10, description:''},
+		xTickCount:{default:10, description:''},
+	}
 </script>
 <h1>LinearAxes</h1>
 <ul>
@@ -65,46 +78,7 @@
 </svg>
 
 <h2 class="docs" id="properties">Properties</h2>
-<section class="properties">
-	<ul>
-		<li>
-			plotHeight
-			<p>Default value <strong>500</strong></p>
-		</li>
-		<li>
-			plotWidth
-			<p>Default value <strong>1000</strong></p>
-		</li>
-		<li>
-			margin
-			<p>Default value <strong>{`{ top: 0, left: 0}`}</strong></p>
-		</li>
-		<li>
-			yScale
-			<p>Default value <strong>(d) => d</strong></p>
-		</li>
-		<li>
-			xScale
-			<p>Default value <strong>(d) => d</strong></p>
-		</li>
-		<li>
-			yFormat
-			<p>Default value <strong>(d) => d</strong></p>
-		</li>
-		<li>
-			xFormat
-			<p>Default value <strong>(d) => d</strong></p>
-		</li>
-		<li>
-			yTickCount
-			<p>Default value <strong>10</strong></p>
-		</li>
-		<li>
-			xTickCount
-			<p>Default value <strong>10</strong></p>
-		</li>
-	</ul>
-</section>
+<PropertyList props={props}/>
 
 <style>
 	svg {

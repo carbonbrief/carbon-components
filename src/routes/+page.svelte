@@ -1,12 +1,12 @@
 <script>
-	import ChartFrame from '$lib/ChartFrame.svelte';
-	// import ChartFrameSocial from "$lib/ChartFrameSocial.svelte";
-	// import Footer from "$lib/Footer.svelte";
-	// import Header from "$lib/Header.svelte";
-	import Logo from '$lib/Logo.svelte';
+
 </script>
 
-<h1>Carbon</h1>
+<h1>Carbon Components</h1>
+<p>Svelte components for building Carbon Brief graphics etc. Install via <a href="https://www.npmjs.com/package/@carbonbrief/carbon">npm</a></p>
+<pre>
+	npm install @carbon-brief/carbon
+</pre>
 <h2>Components</h2>
 <ul>
 	<li><a href="ChartFrame">ChartFrame</a></li>
@@ -19,3 +19,4 @@
 <ul>
 	<li><a href="TypeStyles">Type styles</a></li>
 </ul>
+<h2>Usage examples</h2>

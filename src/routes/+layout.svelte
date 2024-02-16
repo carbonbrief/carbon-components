@@ -1,3 +1,7 @@
+<script>
+	import {GlobalStyle} from "$lib";
+</script>
+
 <svelte:head>
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -6,14 +10,13 @@
 		rel="stylesheet"
 	/>
 </svelte:head>
+<GlobalStyle></GlobalStyle>
 <a href="/">/Carbon component system</a>
 <slot />
 <div class="page-footer" />
 
 <style>
-	.page-footer {
-	}
-	:global(h2) {
+	:global(h2.docs) {
 		border-bottom: 1px solid black;
 		margin-top: 2rem;
 	}

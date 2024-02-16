@@ -30,7 +30,7 @@
 
 <style>
 	.chart-frame {
-		font-family: 'PT sans', sans-serif;
+		font-family: var(--sans-serif, sans-serif);
 		max-width: 800px;
 		margin: 0;
 		padding: 1px;

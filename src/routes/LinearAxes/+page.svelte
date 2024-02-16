@@ -1,8 +1,7 @@
 <script>
-	import LinearAxes from '$lib/LinearAxes.svelte';
+	import {LinearAxes, GlobalStyle} from '$lib';
 	import * as d3 from 'd3';
 </script>
-
 <h1>LinearAxes</h1>
 <ul>
 	<li>Axes for SVG charts.</li>
@@ -12,7 +11,7 @@
 	<li>Example: <a href="#formatting">formatting</a></li>
 	<li><a href="#properties">Properties</a></li>
 </ul>
-<h2 id="basic">Basic...</h2>
+<h2 class="docs" id="basic">Basic...</h2>
 <pre>
   {`<LinearAxes 
     plotHeight={250}
@@ -23,7 +22,7 @@
 	<LinearAxes plotHeight={250} plotWidth={250} margin={{ top: 25, left: 25 }} />
 </svg>
 
-<h2 id="scales">With scales...</h2>
+<h2 class="docs" id="scales">With scales...</h2>
 <pre>
   {`<LinearAxes
     xScale={d3.scaleLinear().domain([0,100]).range([0, 250])}
@@ -42,7 +41,7 @@
 	/>
 </svg>
 
-<h2 id="formatting">With tick formatting...</h2>
+<h2 class="docs" id="formatting">With tick formatting...</h2>
 <pre>
   {`<LinearAxes
     xScale={d3.scaleLinear().domain([0,10]).range([0, 320])}
@@ -65,7 +64,7 @@
 	/>
 </svg>
 
-<h2 id="properties">Properties</h2>
+<h2 class="docs" id="properties">Properties</h2>
 <section class="properties">
 	<ul>
 		<li>

@@ -1,5 +1,5 @@
 <script>
-	import { darkGrey } from '$lib/colours';
+	import { darkGrey } from '$lib/cb-colours';
 
 	export let plotHeight = 500;
 	export let plotWidth = 1000;
@@ -40,6 +40,7 @@
 
 <style>
 	text {
+    font-family: var(--sans-serif-narrow, sans-serif);
 		pointer-events: none;
 	}
 

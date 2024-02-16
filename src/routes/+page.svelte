@@ -12,7 +12,8 @@
 	<li><a href="Logo">Logo</a></li>
 	<li><a href="ChartFrame">ChartFrame</a></li>
 	<li><a href="GlobalStyle">GlobalStyle</a></li>
-	<!-- NEW COMPONENTS -->
+		<li><a href="LinearAxes">LinearAxes</a></li>
+<!-- NEW COMPONENTS -->
 </ul>
 <h2>Style guide</h2>
 <ul>

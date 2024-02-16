@@ -15,24 +15,27 @@
 <g class="axes" transform={`translate(${margin.left},${margin.top})`}>
 	<line x1={0} y1={0} x2={0} y2={plotHeight} stroke-width={2} stroke={darkGrey} />
 	<line x1={0} y1={plotHeight} x2={plotWidth} y2={plotHeight} stroke-width={2} stroke={darkGrey} />
-  {#if yScale.ticks}
-	{#each yScale.ticks(yTickCount) as tick}
-		<line x1={0} y1={yScale(tick)} x2={-5} y2={yScale(tick)} stroke-width={2} stroke={darkGrey} />
-		<text class="y-tick" text-anchor="end" x={-10} y={yScale(tick) + 7}>{yFormat(tick)}</text>
-	{/each}
-  {/if}
-  {#if xScale.ticks}
-	{#each xScale.ticks(xTickCount) as tick}
-		<line
-			x1={xScale(tick)}
-			y1={plotHeight}
-			x2={xScale(tick)}
-			y2={plotHeight + 5}
-			stroke-width={2}
-			stroke={darkGrey} />
-		<text class="x-tick" text-anchor="middle" x={xScale(tick)} y={plotHeight + 25}>{xFormat(tick)}</text>
-	{/each}
-  {/if}
+	{#if yScale.ticks}
+		{#each yScale.ticks(yTickCount) as tick}
+			<line x1={0} y1={yScale(tick)} x2={-5} y2={yScale(tick)} stroke-width={2} stroke={darkGrey} />
+			<text class="y-tick" text-anchor="end" x={-10} y={yScale(tick) + 7}>{yFormat(tick)}</text>
+		{/each}
+	{/if}
+	{#if xScale.ticks}
+		{#each xScale.ticks(xTickCount) as tick}
+			<line
+				x1={xScale(tick)}
+				y1={plotHeight}
+				x2={xScale(tick)}
+				y2={plotHeight + 5}
+				stroke-width={2}
+				stroke={darkGrey}
+			/>
+			<text class="x-tick" text-anchor="middle" x={xScale(tick)} y={plotHeight + 25}
+				>{xFormat(tick)}</text
+			>
+		{/each}
+	{/if}
 </g>
 
 <style>

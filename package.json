@@ -10,7 +10,7 @@
 		"package": "svelte-kit sync && svelte-package && publint",
 		"prepublishOnly": "npm run package",
 		"plop": "plop",
-		"test":"echo \"write some tests\""
+		"test": "echo \"write some tests\""
 	},
 	"exports": {
 		".": {
@@ -30,6 +30,7 @@
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.27.4",
 		"@sveltejs/package": "^2.0.0",
+		"d3": "^7.8.5",
 		"eslint": "^8.28.0",
 		"eslint-plugin-svelte": "^2.30.0",
 		"plop": "^4.0.0",
@@ -43,6 +44,5 @@
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
-	"type": "module",
-	"dependencies": {}
+	"type": "module"
 }

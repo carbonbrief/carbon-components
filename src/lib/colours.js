@@ -1,1 +1,1 @@
-export let darkGrey = "#333";
+export let darkGrey = '#333';

@@ -13,4 +13,18 @@
 <style>
 	.page-footer {
 	}
+	:global(h2) {
+		border-bottom: 1px solid black;
+		margin-top: 2rem;
+	}
+	:global(.properties li) {
+		font-family: monospace;
+	}
+	:global(.properties li p) {
+		font-family: serif;
+		padding-left: 1rem;
+	}
+	:global(.properties li p strong) {
+		font-family: monospace;
+	}
 </style>

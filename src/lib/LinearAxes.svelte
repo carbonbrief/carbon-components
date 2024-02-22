@@ -40,7 +40,7 @@
 
 <style>
 	text {
-    font-family: var(--sans-serif-narrow, sans-serif);
+		font-family: var(--sans-serif-narrow, sans-serif);
 		pointer-events: none;
 	}
 

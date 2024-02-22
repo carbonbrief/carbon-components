@@ -16,7 +16,7 @@
 </pre>
 <Header />
 <h2 clss="docs">Styling</h2>
-<p>To provide styling options the componented uses the following custom css properties</p>
+<p>To provide styling options the component uses the following custom css properties</p>
 <pre>
   var(--ui-theme-background, #4c9fd5) /* button and header background */
   var(--ui-theme-dark, #0b4572) /* button hover state */

@@ -23,8 +23,7 @@
 	export let timeTickCount = 5;
 	export let keyPosition = { x: 0, y: 0 };
 	export let key = true;
-
-	let interactive = true;
+	export let interactive = false;
 
 	let chartSVG;
 	let SVGpoint;
@@ -119,6 +118,8 @@
 	function toolTipOff() {
 		pointerActive = false;
 	}
+
+  $: console.log(sortedData, chartLines)
 </script>
 
 <div class="chart-container">

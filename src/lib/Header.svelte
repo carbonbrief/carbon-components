@@ -80,7 +80,7 @@
 		transition-duration: 0.3s;
 		background-color: var(--ui-theme-background, #4c9fd5);
 		color: var(--ui-theme-text, #ffffff);
-		font-family: var(--sans-serif, "PT Sans" , Helvetica, sans-serif);
+		font-family: var(--sans-serif, 'PT Sans', Helvetica, sans-serif);
 		font-weight: bold;
 		font-size: 0.9rem;
 		padding: 0.3lh 0.8lh;

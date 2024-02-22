@@ -126,6 +126,11 @@
 		grid-template-columns: 6fr 2fr 2fr 2fr;
 		column-gap: var(--s1, 1.5rem);
 	}
+  @media only screen and (max-width: 600px) {
+    nav{ 
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 
 	h2 {
 		font-family: var(--sans-serif, "PT Sans" , Helvetica, sans-serif);

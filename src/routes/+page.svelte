@@ -1,9 +1,12 @@
 <script>
-
 </script>
 
 <h1>Carbon Components</h1>
-<p>Svelte components for building Carbon Brief graphics etc. Install via <a href="https://www.npmjs.com/package/@carbonbrief/carbon">npm</a></p>
+<p>
+	Svelte components for building Carbon Brief graphics etc. Install via <a
+		href="https://www.npmjs.com/package/@carbonbrief/carbon">npm</a
+	>
+</p>
 <pre>
 	npm install @carbon-brief/carbon
 </pre>
@@ -13,6 +16,8 @@
 	<li><a href="GlobalStyle">GlobalStyle</a></li>
 	<li><a href="LinearAxes">LinearAxes</a></li>
 	<li><a href="Logo">Logo</a></li>
+	<li><a href="Header">Header</a></li>
+	<li><a href="Footer">Footer</a></li>
 	<!-- NEW COMPONENTS -->
 </ul>
 <h2>Style guide</h2>

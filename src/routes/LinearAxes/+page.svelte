@@ -4,17 +4,18 @@
 	import * as d3 from 'd3';
 
 	let props = {
-		plotHeight:{default:500,description:''},
-		plotWidth:{default:1000,description:''},
-		margin:{default:"{ top: 0, left: 0, bottom: 0, right: 0 }", description:""},
-		yScale:{default:"(d) => d", description:''},
-		xScale:{default:"(d) => d", description:''},
-		yFormat:{default:"(d) => d", description:''},
-		xFormat:{default:"(d) => d", description:''},
-		yTickCount:{default:10, description:''},
-		xTickCount:{default:10, description:''},
-	}
+		plotHeight: { default: 500, description: '' },
+		plotWidth: { default: 1000, description: '' },
+		margin: { default: '{ top: 0, left: 0, bottom: 0, right: 0 }', description: '' },
+		yScale: { default: '(d) => d', description: '' },
+		xScale: { default: '(d) => d', description: '' },
+		yFormat: { default: '(d) => d', description: '' },
+		xFormat: { default: '(d) => d', description: '' },
+		yTickCount: { default: 10, description: '' },
+		xTickCount: { default: 10, description: '' }
+	};
 </script>
+
 <h1>LinearAxes</h1>
 <ul>
 	<li>Axes for SVG charts.</li>
@@ -78,7 +79,7 @@
 </svg>
 
 <h2 class="docs" id="properties">Properties</h2>
-<PropertyList props={props}/>
+<PropertyList {props} />
 
 <style>
 	svg {

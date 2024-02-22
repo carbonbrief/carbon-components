@@ -18,7 +18,8 @@
 	<li><a href="Logo">Logo</a></li>
 	<li><a href="Header">Header</a></li>
 	<li><a href="Footer">Footer</a></li>
-	<!-- NEW COMPONENTS -->
+		<li><a href="LineChart">LineChart</a></li>
+<!-- NEW COMPONENTS -->
 </ul>
 <h2>Style guide</h2>
 <ul>

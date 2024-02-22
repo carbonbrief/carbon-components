@@ -8,13 +8,9 @@
 	let copySupported = false;
 	let copied = false;
 	if (browser) {
-		console.log(navigator);
 		webShareSupported = navigator && typeof navigator.share !== 'undefined';
 		copySupported = navigator && typeof navigator.clipboard !== 'undefined';
 	}
-
-	$: console.log('web share', webShareSupported);
-	$: console.log('clipboard', copySupported);
 
 	function share() {
 		navigator

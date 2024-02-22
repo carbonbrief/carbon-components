@@ -22,6 +22,7 @@
   var(--ui-theme-dark, #0b4572) /* button hover state */
   var(--ui-theme-hint, #c5e8ff) /* button active state */
   var(--ui-theme-text, #ffffff); /* button text */
+  font-family: var(--sans-serif, "PT Sans" , Helvetica, sans-serif); /* button text */
 </pre>
 <h2 class="docs" id="properties">Properties</h2>
 <PropertyList {props} />

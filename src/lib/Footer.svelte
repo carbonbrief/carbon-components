@@ -85,24 +85,30 @@
 		margin-top: 20px;
 		margin-bottom: 20px;
 		border: 0;
-		border-top: var(--border-thin) solid var(--color-light-grey);
+		border-top: 1px solid var(--color-light-grey, #999999);
 	}
 
+  .box {
+    padding: var(--s0, 1rem);
+    outline: 0.125rem solid transparent;
+    outline-offset: -0.125rem;
+  }
+
 	footer {
-		background-color: var(--color-dark-background);
-		color: var(--color-light-text);
-		margin-top: var(--s4);
+		background-color: var(--color-dark-background, #333333);
+		color: var(--color-light-text, #fffaf0);
+		margin-top: var(--s4, 5rem);
 	}
 
 	p.credit {
-		font-family: var(--serif);
-		font-size: var(--s0);
+		font-family: var(--serif, "PT Serif", "Times New Roman", Times, serif);
+		font-size: var(--s0, 1rem);
 		width:75%;
-		line-height: var(--s1);
+		line-height: var(--s1, 1.5rem);
 	}
 
 	p.credit a{
-		color: var(--color-light-text);
+		color: var(--color-light-text, #fffaf0);
 	}
 
 	.top {
@@ -118,14 +124,15 @@
 	nav {
 		display: grid;
 		grid-template-columns: 6fr 2fr 2fr 2fr;
-		column-gap: var(--s1);
+		column-gap: var(--s1, 1.5rem);
 	}
 
 	h2 {
+		font-family: var(--sans-serif, "PT Sans" , Helvetica, sans-serif);
 		text-transform: uppercase;
 		font-weight: 700;
-		letter-spacing: var(--s-4);
-		font-size: var(--s0);
+		letter-spacing: var(--s-4, 0.2rem);
+		font-size: var(--s0, 1rem);
 	}
 
 	ul {
@@ -135,8 +142,8 @@
 
 	ul a {
 		text-decoration: none;
-		color: var(--color-light-text);
-		font-family: var(--sans-serif-narrow);
+		color: var(--color-light-text, #fffaf0);
+		font-family: var(--sans-serif-narrow, "PT Sans Narrow" , Helvetica, sans-serif);
 	}
 
 	ul a:hover {
@@ -145,12 +152,23 @@
 
 	a.up-arrow {
 		display: block;
-		width: var(--s3);
-		height: var(--s3);
+		width: var(--s3, 3.375rem);
+		height: var(--s3, 3.375rem);
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
 	.copyright{
-		font-size: var(--s0);
+    font-family: var(--serif, "PT Serif", "Times New Roman", Times, serif);
+		font-size: var(--s0, 1rem);
 	}
+  :global(.screenreader-only){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
 </style>

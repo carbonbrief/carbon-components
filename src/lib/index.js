@@ -13,6 +13,6 @@ export {
 	Logo,
 	LinearAxes,
 	Header,
-	Footer
+	Footer,
 	// COMPONENT EXPORTS
 };

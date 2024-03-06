@@ -4,3 +4,4 @@
 <h1>BarChart</h1>
 <pre>{`<BarChart></BarChart>`}</pre>
 <BarChart></BarChart>
+

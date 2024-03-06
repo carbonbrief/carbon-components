@@ -15,6 +15,6 @@ export {
 	LinearAxes,
 	Header,
 	Footer,
-	LineChart
+	LineChart,
 	// COMPONENT EXPORTS
 };

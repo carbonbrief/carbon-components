@@ -5,6 +5,7 @@ import GlobalStyle from './GlobalStyle.svelte';
 import Header from './Header.svelte';
 import Footer from './Footer.svelte';
 import LineChart from './LineChart.svelte';
+import BarChart from "./BarChart.svelte";
 // COMPONENT IMPORTS
 
 // Reexport your entry components here
@@ -16,5 +17,6 @@ export {
 	Header,
 	Footer,
 	LineChart,
-	// COMPONENT EXPORTS
+		BarChart,
+// COMPONENT EXPORTS
 };

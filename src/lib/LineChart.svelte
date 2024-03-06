@@ -1,8 +1,8 @@
 <script>
 	import { scaleLinear, scaleTime, line, extent, area } from 'd3';
-	import { categorical5 } from './cb-colours.js';
+	import { categorical } from './cb-colours.js';
 	import LinearAxes from './LinearAxes.svelte';
-	// import Tooltip from './Tooltip.svelte';
+	import Tooltip from './Tooltip.svelte';
 	import Key from './SVGKey.svelte';
 
 	export let width = 720;
@@ -15,7 +15,7 @@
 	export let valueFormat = (d) => d;
 	export let dateExtent;
 	export let valueExtent;
-	export let lineColors = categorical5;
+	export let lineColors = categorical;
 	export let areaColors = ['rgba(0,0,0,0.2)', 'rgba(255,0,0,0.2)'];
 	export let areaProperties = [];
 	export let lineThickness = 3;
@@ -119,7 +119,6 @@
 		pointerActive = false;
 	}
 
-  $: console.log(sortedData, chartLines)
 </script>
 
 <div class="chart-container">
@@ -201,7 +200,7 @@
 			</g>
 		{/if}
 	</svg>
-	<!-- {#if interactive}
+	{#if interactive}
 		<Tooltip x={pointerPos.x} y={pointerPos.y} visible={pointerActive}>
 			<p class="tip">{dateFormat(timeAccessor(highlightData))}</p>
 			<ul>
@@ -215,7 +214,7 @@
 				{/each}
 			</ul>
 		</Tooltip>
-	{/if} -->
+	{/if}
 </div>
 
 <style>

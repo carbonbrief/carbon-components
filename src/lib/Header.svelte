@@ -8,13 +8,9 @@
 	let copySupported = false;
 	let copied = false;
 	if (browser) {
-		console.log(navigator);
 		webShareSupported = navigator && typeof navigator.share !== 'undefined';
 		copySupported = navigator && typeof navigator.clipboard !== 'undefined';
 	}
-
-	$: console.log('web share', webShareSupported);
-	$: console.log('clipboard', copySupported);
 
 	function share() {
 		navigator
@@ -84,7 +80,7 @@
 		transition-duration: 0.3s;
 		background-color: var(--ui-theme-background, #4c9fd5);
 		color: var(--ui-theme-text, #ffffff);
-		font-family: var(--sans-serif, "PT Sans" , Helvetica, sans-serif);
+		font-family: var(--sans-serif, 'PT Sans', Helvetica, sans-serif);
 		font-weight: bold;
 		font-size: 0.9rem;
 		padding: 0.3lh 0.8lh;

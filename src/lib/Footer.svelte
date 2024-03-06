@@ -1,12 +1,14 @@
 <script>
 	import CarbonLogo from './Logo.svelte';
-  import upChevron from '$lib/assets/up-chevron.png'
+	import upChevron from '$lib/assets/up-chevron.png';
 </script>
 
 <footer class="stack">
 	<div class="center">
 		<div class="box top full-width">
-			<a href="#top" class="up-arrow"  style="background-image:url({upChevron})"><span class="screenreader-only">Back to the top</span></a>
+			<a href="#top" class="up-arrow" style="background-image:url({upChevron})"
+				><span class="screenreader-only">Back to the top</span></a
+			>
 		</div>
 		<nav class="box">
 			<div class="stack">
@@ -88,11 +90,11 @@
 		border-top: 1px solid var(--color-light-grey, #999999);
 	}
 
-  .box {
-    padding: var(--s0, 1rem);
-    outline: 0.125rem solid transparent;
-    outline-offset: -0.125rem;
-  }
+	.box {
+		padding: var(--s0, 1rem);
+		outline: 0.125rem solid transparent;
+		outline-offset: -0.125rem;
+	}
 
 	footer {
 		background-color: var(--color-dark-background, #333333);
@@ -101,13 +103,13 @@
 	}
 
 	p.credit {
-		font-family: var(--serif, "PT Serif", "Times New Roman", Times, serif);
+		font-family: var(--serif, 'PT Serif', 'Times New Roman', Times, serif);
 		font-size: var(--s0, 1rem);
-		width:75%;
+		width: 75%;
 		line-height: var(--s1, 1.5rem);
 	}
 
-	p.credit a{
+	p.credit a {
 		color: var(--color-light-text, #fffaf0);
 	}
 
@@ -126,14 +128,14 @@
 		grid-template-columns: 6fr 2fr 2fr 2fr;
 		column-gap: var(--s1, 1.5rem);
 	}
-  @media only screen and (max-width: 600px) {
-    nav{ 
-      grid-template-columns: 1fr 1fr;
-    }
-  }
+	@media only screen and (max-width: 600px) {
+		nav {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
 
 	h2 {
-		font-family: var(--sans-serif, "PT Sans" , Helvetica, sans-serif);
+		font-family: var(--sans-serif, 'PT Sans', Helvetica, sans-serif);
 		text-transform: uppercase;
 		font-weight: 700;
 		letter-spacing: var(--s-4, 0.2rem);
@@ -148,7 +150,7 @@
 	ul a {
 		text-decoration: none;
 		color: var(--color-light-text, #fffaf0);
-		font-family: var(--sans-serif-narrow, "PT Sans Narrow" , Helvetica, sans-serif);
+		font-family: var(--sans-serif-narrow, 'PT Sans Narrow', Helvetica, sans-serif);
 	}
 
 	ul a:hover {
@@ -162,18 +164,18 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
-	.copyright{
-    font-family: var(--serif, "PT Serif", "Times New Roman", Times, serif);
+	.copyright {
+		font-family: var(--serif, 'PT Serif', 'Times New Roman', Times, serif);
 		font-size: var(--s0, 1rem);
 	}
-  :global(.screenreader-only){
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-  }
+	:global(.screenreader-only) {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+	}
 </style>

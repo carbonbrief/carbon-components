@@ -85,7 +85,8 @@
 		font-weight: normal;
 	}
 
-	.subtitle {
+	p.subtitle {
+		font-family: var(--sans-serif);
 		font-size: 1rem;
 		color: #666666;
 		color: var(--custom-colour, grey);
@@ -95,6 +96,7 @@
 	}
 
 	h2.title {
+		font-family: var(--sans-serif);
 		font-size: 1.375rem;
 		line-height: 1.25;
 		font-weight: bold;

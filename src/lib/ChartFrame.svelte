@@ -7,11 +7,13 @@
 	export let source = 'Carbon Brief';
 	export let footerAdjust = '0em';
 	export let lightLogo = false;
+	export let textColour = "#000";
+	export let bgColour = "#FFF";
 </script>
 
 <section
 	class="chart-frame stack {variant?variant:''}"
-	style="--footer-offset:{footerAdjust ? '-' + footerAdjust : '0em'}"
+	style="--custom-colour:{textColour}; --custom-bg:{bgColour}; --footer-offset:{footerAdjust ? '-' + footerAdjust : '0em'}"
 >
 	<div>
 		<h2 class="title">{@html title}</h2>

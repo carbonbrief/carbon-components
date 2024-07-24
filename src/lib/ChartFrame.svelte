@@ -1,6 +1,7 @@
 <script>
 	import Logo from '$lib/Logo.svelte';
 
+	export let variant;
 	export let title = 'CHART TITLE';
 	export let subtitle = 'chart subtitle';
 	export let source = 'Carbon Brief';
@@ -9,7 +10,7 @@
 </script>
 
 <section
-	class="chart-frame stack"
+	class="chart-frame stack {variant?variant:''}"
 	style="--footer-offset:{footerAdjust ? '-' + footerAdjust : '0em'}"
 >
 	<div>
@@ -122,5 +123,27 @@
 			line-height: var(--s0);
 			margin-top: var(--s-1);
 		}
+	}
+
+	.social .source{
+
+	}
+
+	.social p.subtitle{
+		font-size: 1.25rem;
+		line-height: 1.78rem;
+    font-family: var(--sans-serif);
+    font-weight: 400;
+		margin-top: 0.2rem;
+	}
+
+	.social h2.title{
+		line-height: 1.78rem;
+		font-size: 1.875rem;
+    font-family: var(--sans-serif-narrow);
+    font-weight: 700;
+    word-wrap: break-word;
+    white-space: normal;
+		margin: 0;
 	}
 </style>

@@ -1,5 +1,5 @@
 <script>
-	import { browser } from '$app/environment';
+	import { BROWSER } from 'esm-env';
 	import CarbonLogo from './Logo.svelte';
 	export let shareTitle = 'Carbon Brief';
 	export let shareLink = 'https://www.carbonbrief.com';
@@ -7,7 +7,7 @@
 	let webShareSupported = false;
 	let copySupported = false;
 	let copied = false;
-	if (browser) {
+	if (BROWSER) {
 		webShareSupported = navigator && typeof navigator.share !== 'undefined';
 		copySupported = navigator && typeof navigator.clipboard !== 'undefined';
 	}

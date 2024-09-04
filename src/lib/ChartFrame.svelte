@@ -7,13 +7,15 @@
 	export let source = 'Carbon Brief';
 	export let footerAdjust = '0em';
 	export let lightLogo = false;
-	export let textColour = "#000";
-	export let bgColour = "#FFF";
+	export let textColour = '#000';
+	export let bgColour = '#FFF';
 </script>
 
 <section
-	class="chart-frame stack {variant?variant:''}"
-	style="--custom-colour:{textColour}; --custom-bg:{bgColour}; --footer-offset:{footerAdjust ? '-' + footerAdjust : '0em'}"
+	class="chart-frame stack {variant ? variant : ''}"
+	style="--custom-colour:{textColour}; --custom-bg:{bgColour}; --footer-offset:{footerAdjust
+		? '-' + footerAdjust
+		: '0em'}"
 >
 	<div>
 		<h2 class="title">{@html title}</h2>
@@ -127,25 +129,24 @@
 		}
 	}
 
-	.social .source{
-
+	.social .source {
 	}
 
-	.social p.subtitle{
+	.social p.subtitle {
 		font-size: 1.25rem;
 		line-height: 1.78rem;
-    font-family: var(--sans-serif);
-    font-weight: 400;
+		font-family: var(--sans-serif);
+		font-weight: 400;
 		margin-top: 0.2rem;
 	}
 
-	.social h2.title{
+	.social h2.title {
 		line-height: 1.78rem;
 		font-size: 1.875rem;
-    font-family: var(--sans-serif-narrow);
-    font-weight: 700;
-    word-wrap: break-word;
-    white-space: normal;
+		font-family: var(--sans-serif-narrow);
+		font-weight: 700;
+		word-wrap: break-word;
+		white-space: normal;
 		margin: 0;
 	}
 </style>

@@ -1,6 +1,6 @@
 <script>
 	import { BROWSER } from 'esm-env';
-	import CarbonLogo from './Logo.svelte';
+	import CarbonLogo from '$lib/Logo.svelte';
 	export let shareTitle = 'Carbon Brief';
 	export let shareLink = 'https://www.carbonbrief.com';
 	export let shareText = 'Clear on climate';

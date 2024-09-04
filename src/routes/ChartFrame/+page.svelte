@@ -2,14 +2,14 @@
 	import { ChartFrame } from '$lib';
 	import PropertyList from '$lib/docs/PropertyList.svelte';
 	let props = {
-		textColour: { default:"#000", description:'change the text colour'},
+		textColour: { default: '#000', description: 'change the text colour' },
 		title: { default: 'CHART TITLE', description: '' },
 		subtitle: { default: 'chart subtitle', description: '' },
 		source: { default: 'Carbon Brief', description: '' },
 		footerAdjust: { default: '0em', description: '' },
 		lightLogo: { default: false, description: '' },
-		bgColour: { default:"#FFF", description:'change the background colour'},
-		variant: { default: undefined, description: 'can be set to "social"'}
+		bgColour: { default: '#FFF', description: 'change the background colour' },
+		variant: { default: undefined, description: 'can be set to "social"' }
 	};
 </script>
 
@@ -35,13 +35,14 @@
 	<img src="/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
 </ChartFrame>`}
 </pre>
-<ChartFrame 
+<ChartFrame
 	variant="social"
 	title="Social variant"
 	subtitle="Chart subtitle (including units)"
-	textColour={"white"}
-	bgColour={"black"}
-	lightLogo={true}>
+	textColour={'white'}
+	bgColour={'black'}
+	lightLogo={true}
+>
 	<img src="/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
 </ChartFrame>
 

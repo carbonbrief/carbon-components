@@ -1,5 +1,5 @@
 <script>
-	import CarbonLogo from './Logo.svelte';
+	import CarbonLogo from '$lib/Logo.svelte';
 	import upChevron from '$lib/assets/up-chevron.png';
 </script>
 

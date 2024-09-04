@@ -1,9 +1,9 @@
 <script>
 	import { scaleLinear, scaleTime, line, extent, area } from 'd3';
-	import { categorical } from './cb-colours.js';
-	import LinearAxes from './LinearAxes.svelte';
-	import Tooltip from './Tooltip.svelte';
-	import Key from './SVGKey.svelte';
+	import { categorical } from '$lib/cb-colours.js';
+	import LinearAxes from '$lib/LinearAxes.svelte';
+	import Tooltip from '$lib/Tooltip.svelte';
+	import Key from '$lib/SVGKey.svelte';
 
 	export let width = 720;
 	export let height = 600;
@@ -118,7 +118,6 @@
 	function toolTipOff() {
 		pointerActive = false;
 	}
-
 </script>
 
 <div class="chart-container">

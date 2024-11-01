@@ -43,21 +43,18 @@
 	.sticky-nav {
 		font-weight: bold;
 		position: fixed;
-		backdrop-filter: blur(5px);
+		/* backdrop-filter: blur(5px); */
 		display: flex;
 		justify-content: start;
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: rgba(255, 255, 255, 0.7);
 		margin: 0;
 		width: 100%;
 	}
 
-	.sticky-nav a {
+	:global(a:hover){
 		text-decoration: none;
-		color: black;
-	}
-	.sticky-nav a:hover {
-		text-decoration: none;
-		color: red;
+		color: white;
+		background-color: black;
 	}
 
 	:global(h2.docs) {

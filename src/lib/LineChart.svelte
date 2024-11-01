@@ -22,6 +22,7 @@
 	export let valueTickCount = 5;
 	export let timeTickCount = 5;
 	export let keyPosition = { x: 0, y: 0 };
+	export let keyOrientation = 'vertical';
 	export let key = true;
 	export let interactive = false;
 
@@ -174,6 +175,7 @@
 
 		{#if key}
 			<Key
+				orientation={keyOrientation ? keyOrientation : 'vertical'}
 				x={keyPosition.x}
 				y={keyPosition.y}
 				items={lineProperties.map((d, i) => ({

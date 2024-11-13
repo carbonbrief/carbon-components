@@ -9,6 +9,7 @@
 	export let lightLogo = false;
 	export let textColour = '#000';
 	export let bgColour = '#FFF';
+	export let showLogo = true;
 </script>
 
 <section
@@ -29,7 +30,7 @@
 			<span class="source">Source:</span>
 			{source}
 		</div>
-		<div class="logo-container"><Logo light={lightLogo} /></div>
+		{#if showLogo}<div class="logo-container"><Logo light={lightLogo} /></div>{/if}
 	</div>
 </section>
 

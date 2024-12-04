@@ -61,7 +61,6 @@
 
 <style>
 	header {
-		height: 1.9lh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		background-color: var(--ui-theme-header, #4c9fd5);

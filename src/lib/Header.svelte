@@ -1,6 +1,7 @@
 <script>
 	import { BROWSER } from 'esm-env';
 	import CarbonLogo from '$lib/Logo.svelte';
+	export let shareActive = false;
 	export let shareTitle = 'Carbon Brief';
 	export let shareLink = 'https://www.carbonbrief.com';
 	export let shareText = 'Clear on climate';
@@ -46,7 +47,8 @@
 </script>
 
 <header class="box" id="top">
-	<CarbonLogo monochrome={true} light={true} />
+	<a href="https://www.carbonbrief.org"><CarbonLogo monochrome={false} light={true} /></a>
+	{#if shareActive}
 	<div class="sharing">
 		{#if webShareSupported}
 			<button on:click={share}>Share</button>
@@ -54,6 +56,7 @@
 			<button on:click={copy}>{copied ? '✅ Copied' : 'Copy link'}</button>
 		{/if}
 	</div>
+	{/if}
 </header>
 
 <style>
@@ -61,14 +64,18 @@
 		height: 1.9lh;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		background-color: var(--ui-theme-background, #4c9fd5);
+		background-color: var(--ui-theme-header, #4c9fd5);
 		color: var(--ui-theme-text, #ffffff);
-		padding: 0.8em 1.6em;
+		padding: 0.8em;
+		padding-bottom: 0.5em;
 		position: inherit;
 		max-width: 100%;
 		z-index: 1;
 	}
 
+	a:hover{
+		background-color: var(--ui-theme-header, #4c9fd5);
+	}
 	.sharing {
 		display: flex;
 		justify-content: end;
@@ -78,8 +85,8 @@
 	button {
 		transition-property: background-color, color;
 		transition-duration: 0.3s;
-		background-color: var(--ui-theme-background, #4c9fd5);
-		color: var(--ui-theme-text, #ffffff);
+		background-color: var(--ui-theme-header, #4c9fd5);
+		color: var(--ui-theme-header-text, #ffffff);
 		font-family: var(--sans-serif, 'PT Sans', Helvetica, sans-serif);
 		font-weight: bold;
 		font-size: 0.9rem;

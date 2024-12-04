@@ -20,9 +20,7 @@
 </script>
 
 <div class="logo" style="background-image:url({logoImage})">
-	<a href="https://www.carbonbrief.org" class="logo-link">
 		<span class="screenreader-only">Carbon Brief</span>
-	</a>
 </div>
 
 <style>
@@ -32,12 +30,6 @@
 		height: 2rem;
 		background-repeat: no-repeat;
 		opacity: 0.95;
-	}
-
-	.logo-link {
-		display: inline-block;
-		width: 100%;
-		height: 100%;
 	}
 
 	.screenreader-only {

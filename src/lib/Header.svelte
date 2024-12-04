@@ -1,7 +1,7 @@
 <script>
 	import { BROWSER } from 'esm-env';
 	import CarbonLogo from '$lib/Logo.svelte';
-	export let shareable = false;
+	export let shareActive = false;
 	export let shareTitle = 'Carbon Brief';
 	export let shareLink = 'https://www.carbonbrief.com';
 	export let shareText = 'Clear on climate';
@@ -48,7 +48,7 @@
 
 <header class="box" id="top">
 	<a href="https://www.carbonbrief.org"><CarbonLogo monochrome={false} light={true} /></a>
-	{#if shareable}
+	{#if shareActive}
 	<div class="sharing">
 		{#if webShareSupported}
 			<button on:click={share}>Share</button>

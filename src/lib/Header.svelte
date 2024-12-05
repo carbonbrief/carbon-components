@@ -67,6 +67,7 @@
 		color: var(--ui-theme-text, #ffffff);
 		padding: 0.8em;
 		padding-bottom: 0.5em;
+		padding-left: 1.2em;
 		position: inherit;
 		max-width: 100%;
 		z-index: 1;

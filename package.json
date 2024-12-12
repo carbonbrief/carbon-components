@@ -1,6 +1,6 @@
 {
 	"name": "@carbonbrief/carbon",
-	"version": "0.4.0",
+	"version": "0.5.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -24,7 +24,7 @@
 		"!dist/**/*.spec.*"
 	],
 	"peerDependencies": {
-		"svelte": "^4"
+		"svelte": "^5"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",

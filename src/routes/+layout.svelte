@@ -51,7 +51,7 @@
 		width: 100%;
 	}
 
-	:global(a:hover){
+	:global(a:hover) {
 		text-decoration: none;
 		color: white;
 		background-color: black;

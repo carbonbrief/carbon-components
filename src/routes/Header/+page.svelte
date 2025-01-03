@@ -3,7 +3,7 @@
 	import PropertyList from '$lib/docs/PropertyList.svelte';
 
 	let props = {
-		shareActive: {default:false, description:'display share button'},
+		shareActive: { default: false, description: 'display share button' },
 		shareTitle: { default: 'Carbon Brief', description: '' },
 		shareLink: { default: 'https://www.carbonbrief.com', description: '' },
 		shareText: { default: 'Clear on climate', description: '' }

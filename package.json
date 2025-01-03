@@ -1,6 +1,6 @@
 {
 	"name": "@carbonbrief/carbon",
-	"version": "0.5.0",
+	"version": "1.0.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -27,21 +27,22 @@
 		"svelte": "^5"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.30.4",
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/package": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"d3": "^7.8.5",
 		"eslint": "^8.28.0",
 		"eslint-plugin-svelte": "^2.30.0",
 		"esm-env": "^1.0.0",
 		"plop": "^4.0.0",
-		"prettier": "^2.6.2",
-		"prettier-plugin-svelte": "^2.7.0",
+		"prettier": "^3.4.2",
+		"prettier-plugin-svelte": "^3.3.2",
 		"publint": "^0.1.9",
-		"svelte": "^4.2.7",
+		"svelte": "^5.16.1",
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
-		"vite": "^4.4.2"
+		"vite": "^5.0.0"
 	},
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",

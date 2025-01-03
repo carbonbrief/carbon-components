@@ -8,7 +8,7 @@
 		source: { default: 'Carbon Brief', description: '' },
 		footerAdjust: { default: '0em', description: '' },
 		lightLogo: { default: false, description: '' },
-		showLogo: {default: true, description: 'choose to hide the CarbonBrief logo'},
+		showLogo: { default: true, description: 'choose to hide the CarbonBrief logo' },
 		bgColour: { default: '#FFF', description: 'change the background colour' },
 		variant: { default: undefined, description: 'can be set to "social"' }
 	};

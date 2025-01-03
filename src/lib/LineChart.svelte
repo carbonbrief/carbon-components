@@ -208,7 +208,7 @@
 				{#each lineProperties as line, i}
 					{#if !isNaN(highlightData[line])}
 						<li>
-							<span style="background-color:{lineColors[i]}" class="swatch" />{line}
+							<span style="background-color:{lineColors[i]}" class="swatch"></span>{line}
 							<span class="tip value">{valueFormat(highlightData[line])}</span>
 						</li>
 					{/if}

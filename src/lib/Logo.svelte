@@ -20,7 +20,7 @@
 </script>
 
 <div class="logo" style="background-image:url({logoImage})">
-		<span class="screenreader-only">Carbon Brief</span>
+	<span class="screenreader-only">Carbon Brief</span>
 </div>
 
 <style>

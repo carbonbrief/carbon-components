@@ -49,13 +49,13 @@
 <header class="box" id="top">
 	<a href="https://www.carbonbrief.org"><CarbonLogo monochrome={false} light={true} /></a>
 	{#if shareActive}
-	<div class="sharing">
-		{#if webShareSupported}
-			<button on:click={share}>Share</button>
-		{:else if copySupported}
-			<button on:click={copy}>{copied ? '✅ Copied' : 'Copy link'}</button>
-		{/if}
-	</div>
+		<div class="sharing">
+			{#if webShareSupported}
+				<button on:click={share}>Share</button>
+			{:else if copySupported}
+				<button on:click={copy}>{copied ? '✅ Copied' : 'Copy link'}</button>
+			{/if}
+		</div>
 	{/if}
 </header>
 
@@ -73,7 +73,7 @@
 		z-index: 1;
 	}
 
-	a:hover{
+	a:hover {
 		background-color: var(--ui-theme-header, #4c9fd5);
 	}
 	.sharing {

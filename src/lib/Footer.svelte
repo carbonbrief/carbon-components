@@ -134,6 +134,12 @@
 		}
 	}
 
+	@media only screen and (max-width: 500px) {
+		nav {
+			grid-template-columns: 1fr;
+		}
+	}
+
 	h2 {
 		font-family: var(--sans-serif, 'PT Sans', Helvetica, sans-serif);
 		text-transform: uppercase;

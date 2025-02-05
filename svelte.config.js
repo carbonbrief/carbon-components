@@ -11,6 +11,9 @@ const config = {
 		adapter: adapter({}),
 		paths: {
 			base: baseDir
+		},
+		prerender: {
+			handleHttpError: 'ignore'
 		}
 	},
 	env: {

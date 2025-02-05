@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import { ChartFrame } from '$lib';
 	import PropertyList from '$lib/docs/PropertyList.svelte';
 	let props = {
@@ -17,11 +18,11 @@
 <h1>ChartFrame</h1>
 <pre>
 {`<ChartFrame title="Chart title" subtitle="Chart subtitle (including units)">
-	<img src="/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
+	<img src="${base}/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
 </ChartFrame>`}
 </pre>
 <ChartFrame title="Chart title" subtitle="Chart subtitle (including units)">
-	<img src="/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
+	<img src="{base}/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
 </ChartFrame>
 
 <h2>Social variant with custom colours</h2>
@@ -33,7 +34,7 @@
 	textColour={"white"}
 	bgColour={"black"}
 	lightLogo={true}>
-	<img src="/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
+	<img src="${base}/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
 </ChartFrame>`}
 </pre>
 <ChartFrame
@@ -44,7 +45,7 @@
 	bgColour={'black'}
 	lightLogo={true}
 >
-	<img src="/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
+	<img src="{base}/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
 </ChartFrame>
 
 <h2>Properties</h2>

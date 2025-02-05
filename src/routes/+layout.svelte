@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import { GlobalStyle } from '$lib';
 </script>
 
@@ -13,7 +14,7 @@
 <GlobalStyle />
 
 <article>
-	<nav class="sticky-nav"><a href="/">Carbon component system</a></nav>
+	<nav class="sticky-nav"><a href="{base}">Carbon component system</a></nav>
 	<section>
 		<slot />
 	</section>

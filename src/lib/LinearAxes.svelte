@@ -1,5 +1,6 @@
 <script>
-	import { darkGrey } from '$lib/cb-colours';
+	import {Colours} from '$lib';
+	let darkGrey = Colours.grey[0];
 
 	export let plotHeight = 500;
 	export let plotWidth = 1000;

@@ -8,12 +8,13 @@ export const green = ['#539e3e','#77c465','#b6eaa7'];
 
 export const categoricalAreas = [blue[1], blue[2], blue[3], blue[4], grey[3], grey[2]];
 export const categoricalLines = [blue[1], blue[2], blue[3], blue[5], grey[2]];
+export const sex
 
 export let hexToRgb = (hexString)=>{
   let hex = hexString;
   // Expand shorthand form (e.g. "03F") to full form (e.g. "0033FF")
   const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
-  hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+  hex = hex.replace(shorthandRegex, function(match, r, g, b) {
     return r + r + g + g + b + b;
   });
 

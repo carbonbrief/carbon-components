@@ -5,6 +5,15 @@
   }
 </script>
 <h1>Colours</h1>
+<h2>Colours.hexToRgb(hexCode)</h2>
+<p>Convert hex codes to RGB values</p>
+<pre class="js">
+import {'{Colours}'} from '@carbon-brief/carbon';
+
+let rgbValues = Colours.hexToRgb('#FF0000');
+</pre>
+<p>Result: <span class="mono">rgbValues = {`{r:255, g:0, b:0}`}</span></p>
+<hr>
 <h2>Primary blue</h2>
 <div class="swatch-grid">
   {@render colourArray('blue')}
@@ -66,5 +75,12 @@ rgb({hexToRgb(colourHex)})</pre>
   }
   h2{
     margin-bottom: 0rem;
+  }
+  .mono{
+    font-family: monospace;
+  }
+  pre.js{
+    padding-left: 1rem;
+    border-left:1px dotted black
   }
 </style>

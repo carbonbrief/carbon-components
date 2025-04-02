@@ -9,7 +9,6 @@
 
 	const categorical = Colours.categoricalLines;
 
-
 	export let width = 720;
 	export let height = 600;
 	export let data = [];

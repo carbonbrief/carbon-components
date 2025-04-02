@@ -24,6 +24,7 @@
 </ul>
 <h2>Style guide</h2>
 <ul>
+	<li><a href="{base}/Colours">Colours</a></li>
 	<li><a href="{base}/TypeStyles">Type styles</a></li>
 </ul>
 <h2>Usage examples</h2>

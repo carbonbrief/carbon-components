@@ -1,3 +1,6 @@
+
+<h1>Site type styles</h1>
+<article class="site-style">
 <h1>Heading 1, PT Sans bold 2.75rem</h1>
 <details>
 	<summary>CSS</summary>
@@ -72,9 +75,10 @@ line-height: 1.5rem;
   color: #666666;
 </pre>
 </details>
+</article>
 
 <style>
-	summary {
+	.site-style summary {
 		font-family: 'PT Sans', sans-serif;
 		font-size: 1rem;
 		display: block;
@@ -82,48 +86,48 @@ line-height: 1.5rem;
 		display: inline-block;
 		cursor: pointer;
 	}
-	h1 {
+	.site-style h1 {
 		font-size: 2.75rem;
 		font-family: 'PT Sans', sans-serif;
 		font-weight: bold;
 	}
-	h2 {
+	.site-style h2 {
 		font-size: 2rem;
 		font-family: 'PT Sans', sans-serif;
 		font-weight: bold;
 	}
 
-	h3 {
+	.site-style h3 {
 		font-size: 1.75rem;
 		font-family: 'PT Sans', sans-serif;
 		font-weight: bold;
 	}
 
-	p {
+	.site-style p {
 		font-size: 1.25rem;
 		font-family: 'PT Serif', sans-serif;
 		line-height: 2.25rem;
 		max-width: 46rem;
 	}
 
-	.chart-title {
+	.site-style .chart-title {
 		font-size: 1.375rem;
 		font-weight: bold;
 		line-height: 1.25rem;
 	}
 
-	.caption {
+	.site-style .caption {
 		font-family: 'PT Sans', sans-serif;
 		font-size: 1rem;
 		line-height: 1.5rem;
 	}
-	.source {
+	.site-style .source {
 		font-family: 'PT Sans', sans-serif;
 		font-size: 0.8rem;
 		color: #666666;
 	}
 
-	pre {
+	.site-style pre {
 		max-width: 46rem;
 		color: #666666;
 		border-inline-start: 1px dotted #666666;

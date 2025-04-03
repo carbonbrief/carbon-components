@@ -35,6 +35,10 @@ let rgbValues = Colours.hexToRgb('#FF0000');
 {@render colourArray('categoricalAreas')}
 <h2>Categorical lines</h2>
 {@render colourArray('categoricalLines')}
+<h2>Theme gender</h2>
+{@render colourObject('gender')}
+
+
 {#snippet swatch(colourHex, name)}
   <div class="swatch">
     <h3>{name}</h3>
@@ -47,10 +51,18 @@ rgb({hexToRgb(colourHex)})</pre>
   </div>
 {/snippet }
 
-{#snippet colourArray(colour)}
+{#snippet colourArray(a)}
 <div class="swatch-grid">
-  {#each colours[colour] as hex, i}
-    {@render swatch(hex, `colours.${colour}[${i}]`)}
+  {#each colours[a] as hex, i}
+    {@render swatch(hex, `colours.${a}[${i}]`)}
+  {/each}
+</div>
+{/snippet}
+
+{#snippet colourObject(o)}
+<div class="swatch-grid">
+  {#each Object.entries(colours[o]) as [key, hex], i}
+    {@render swatch(hex, `colours.${o}[${key}]`)}
   {/each}
 </div>
 {/snippet}

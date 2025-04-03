@@ -1,3 +1,5 @@
+import { interpolateHcl } from "d3";
+
 export const blue = ['#152d42','#0b4572','#5a96d1','#88dbff','#d3edf4','#cee2ea'];
 export const red = ['#720800','#ad2923','#dd3f33','#e57e73','#ffb0ae'];
 export const grey = ['#141414','#444444','#999999','#cccccc','#efefef'];
@@ -8,7 +10,8 @@ export const green = ['#539e3e','#77c465','#b6eaa7'];
 
 export const categoricalAreas = [blue[1], blue[2], blue[3], blue[4], grey[3], grey[2]];
 export const categoricalLines = [blue[1], blue[2], blue[3], blue[5], grey[2]];
-export const sex
+export const gender = {men:purple[1] ,women:yellow[1]}
+// export const temperatureRamp = ()
 
 export let hexToRgb = (hexString)=>{
   let hex = hexString;

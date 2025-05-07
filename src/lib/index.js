@@ -6,10 +6,12 @@ import Header from './Header.svelte';
 import Footer from './Footer.svelte';
 import LineChart from './LineChart.svelte';
 import Tooltip from './Tooltip.svelte';
+import * as Colours from './colours.js';
 // COMPONENT IMPORTS
 
 // Reexport your entry components here
 export {
+	Colours,
 	ChartFrame,
 	GlobalStyle,
 	Logo,
@@ -17,6 +19,6 @@ export {
 	Header,
 	Footer,
 	LineChart,
-	Tooltip
+	Tooltip,
 	// COMPONENT EXPORTS
 };

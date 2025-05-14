@@ -5,6 +5,8 @@
 	export let shareTitle = 'Carbon Brief';
 	export let shareLink = 'https://www.carbonbrief.com';
 	export let shareText = 'Clear on climate';
+	export let monoLogo = false;
+	export let lightLogo = true;
 	let webShareSupported = false;
 	let copySupported = false;
 	let copied = false;
@@ -47,7 +49,7 @@
 </script>
 
 <header class="box" id="top">
-	<a href="https://www.carbonbrief.org"><CarbonLogo monochrome={false} light={true} /></a>
+	<a href="https://www.carbonbrief.org"><CarbonLogo monochrome={monoLogo} light={lightLogo} /></a>
 	{#if shareActive}
 		<div class="sharing">
 			{#if webShareSupported}

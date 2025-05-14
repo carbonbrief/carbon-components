@@ -6,7 +6,9 @@
 		shareActive: { default: false, description: 'display share button' },
 		shareTitle: { default: 'Carbon Brief', description: '' },
 		shareLink: { default: 'https://www.carbonbrief.com', description: '' },
-		shareText: { default: 'Clear on climate', description: '' }
+		shareText: { default: 'Clear on climate', description: '' },
+		monoLogo: { default: 'false', description: '' },
+		lightLogo: { default: 'true', description: '' }
 	};
 </script>
 

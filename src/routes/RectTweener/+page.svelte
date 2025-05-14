@@ -60,9 +60,9 @@
 		strokeWidth={4}
 	></RectTweener>
 </svg>
+
 <h2 class="docs" id="interactive">Interactive</h2>
-<pre>{`
-<script>
+<pre class="code-js">{`
   let egWidth = $state(100);
   let egHeight = $state(100);
   let egX = $state(100);
@@ -74,8 +74,8 @@
     egX = Math.random() * (500-egWidth);
     egY = Math.random() * (500-egHeight);
   }
-</script>
-
+`}</pre>
+<pre class="code-svelte">{`
 <button onclick={randomExample}>CHANGE</button>
 <br>
 <svg width={100} height={100}>
@@ -89,6 +89,7 @@
     strokeWidth={4}>
   </RectTweener>
 </svg>`}</pre>
+
 <button onclick={randomExample}>CHANGE</button>
 <br />
 <svg width={500} height={500}>

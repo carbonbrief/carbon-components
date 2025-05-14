@@ -1,5 +1,5 @@
 <script>
-	import {Colours} from '$lib';
+	import { Colours } from '$lib';
 	let darkGrey = Colours.grey[0];
 
 	export let plotHeight = 500;

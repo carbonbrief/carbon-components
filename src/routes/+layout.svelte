@@ -14,7 +14,7 @@
 <GlobalStyle />
 
 <article>
-	<nav class="sticky-nav"><a href="{base}">Carbon component system</a></nav>
+	<nav class="sticky-nav"><a href={base}>Carbon component system</a></nav>
 	<section>
 		<slot />
 	</section>

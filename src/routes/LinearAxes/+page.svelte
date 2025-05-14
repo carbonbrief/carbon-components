@@ -64,6 +64,7 @@
     yFormat={d=>\`£$\{d * 100\}\`}
     plotHeight={250}
     plotWidth={320}
+		strokeWidth={4}
     margin={{ top: 25, left: 55 }} />`}
 </pre>
 <svg width="400" height="300">
@@ -74,6 +75,7 @@
 		yFormat={(d) => `£${d * 100}`}
 		plotHeight={250}
 		plotWidth={320}
+		strokeWidth={4}
 		margin={{ top: 25, left: 55 }}
 	/>
 </svg>

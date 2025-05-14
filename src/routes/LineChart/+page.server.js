@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import { csvParse, extent } from 'd3';
-export const prerender = true
+export const prerender = true;
 const dataFile = 'static/data/global-temperature.csv';
 
 let sources = ['NASA', 'Hadley/UEA', 'NOAA', 'Berkeley', 'Copernicus ERA5'];

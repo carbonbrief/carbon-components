@@ -1,7 +1,6 @@
 // import adapter from '@sveltejs/adapter-auto';
 import adapter from '@sveltejs/adapter-static';
 
-
 const baseDir = process.env.PROJECT_PATH ? `/${process.env.PROJECT_PATH}` : '/build';
 console.log('building to >> ', baseDir);
 

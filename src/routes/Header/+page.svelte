@@ -16,7 +16,19 @@
 <pre>
   {`<Header></Header>`}
 </pre>
-<Header />
+<div>
+	<Header />
+</div>
+
+<h2>adjusting the styling</h2>
+<pre>
+{`<div style="--ui-theme-header:#f00">
+	<Header></Header>
+</div>`}
+</pre>
+<div style="--ui-theme-header:#f00">
+	<Header />
+</div>
 <h2 clss="docs">Styling</h2>
 <p>To provide styling options the component uses the following custom css properties</p>
 <pre>

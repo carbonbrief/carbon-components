@@ -1,8 +1,9 @@
 <script>
-  import * as colours from "$lib/colours.js";
+  import {Colours} from "$lib";
   function hexToRgb(hex) {
-    return Object.values(colours.hexToRgb(hex)).join(', ')
+    return Object.values(Colours.hexToRgb(hex)).join(', ')
   }
+  console.log('C', Colours)
 </script>
 <h1>Colours</h1>
 <h2>Colours.hexToRgb(hexCode)</h2>
@@ -53,16 +54,16 @@ rgb({hexToRgb(colourHex)})</pre>
 
 {#snippet colourArray(a)}
 <div class="swatch-grid">
-  {#each colours[a] as hex, i}
-    {@render swatch(hex, `colours.${a}[${i}]`)}
+  {#each Colours[a] as hex, i}
+    {@render swatch(hex, `Colours.${a}[${i}]`)}
   {/each}
 </div>
 {/snippet}
 
 {#snippet colourObject(o)}
 <div class="swatch-grid">
-  {#each Object.entries(colours[o]) as [key, hex], i}
-    {@render swatch(hex, `colours.${o}[${key}]`)}
+  {#each Object.entries(Colours[o]) as [key, hex], i}
+    {@render swatch(hex, `Colours.${o}[${key}]`)}
   {/each}
 </div>
 {/snippet}

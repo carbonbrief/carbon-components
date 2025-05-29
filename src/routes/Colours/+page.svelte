@@ -3,7 +3,6 @@
   function hexToRgb(hex) {
     return Object.values(Colours.hexToRgb(hex)).join(', ')
   }
-  console.log('C', Colours)
 </script>
 <h1>Colours</h1>
 <h2>Colours.hexToRgb(hexCode)</h2>

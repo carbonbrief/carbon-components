@@ -1,5 +1,6 @@
 <script>
 	import { Header } from '$lib';
+	import { NewHeader } from '$lib';
 	import PropertyList from '$lib/docs/PropertyList.svelte';
 
 	let props = {
@@ -12,12 +13,12 @@
 	};
 </script>
 
-<h1>Header</h1>
+<h1>NewHeader</h1>
 <pre>
-  {`<Header></Header>`}
+  {`<NewHeader></NewHeader>`}
 </pre>
 <div>
-	<Header />
+	<NewHeader />
 </div>
 
 <h2>adjusting the styling</h2>

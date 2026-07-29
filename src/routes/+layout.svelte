@@ -4,6 +4,10 @@
 </script>
 
 <svelte:head>
+	<!-- <link
+		rel="stylesheet"
+		href="https://www.carbonbrief.org/wp-content/themes/carbon-brief/assets/main.eb952d330d36958c1b97.css"
+	/> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link
@@ -14,7 +18,7 @@
 <GlobalStyle />
 
 <article>
-	<nav class="sticky-nav"><a href="{base}">Carbon component system</a></nav>
+	<nav class="sticky-nav"><a href={base}>Carbon component system</a></nav>
 	<section>
 		<slot />
 	</section>

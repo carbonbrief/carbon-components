@@ -7,6 +7,8 @@ import Footer from './Footer.svelte';
 import LineChart from './LineChart.svelte';
 import Tooltip from './Tooltip.svelte';
 import * as Colours from './colours.js';
+import NewHeader from './NewHeader.svelte';
+
 // COMPONENT IMPORTS
 
 // Reexport your entry components here
@@ -20,5 +22,6 @@ export {
 	Footer,
 	LineChart,
 	Tooltip,
+	NewHeader
 	// COMPONENT EXPORTS
 };

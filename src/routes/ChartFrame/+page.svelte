@@ -22,7 +22,12 @@
 </ChartFrame>`}
 </pre>
 <ChartFrame title="Chart title" subtitle="Chart subtitle (including units)">
-	<img src="{base}/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
+	<img
+		src="{base}/830x500.png"
+		alt="placeholder image 800 by 500 pixels"
+		width="800"
+		height="500"
+	/>
 </ChartFrame>
 
 <h2>Social variant with custom colours</h2>
@@ -45,7 +50,12 @@
 	bgColour={'black'}
 	lightLogo={true}
 >
-	<img src="{base}/830x500.png" alt="placeholder image 800 by 500 pixels" width="800" height="500" />
+	<img
+		src="{base}/830x500.png"
+		alt="placeholder image 800 by 500 pixels"
+		width="800"
+		height="500"
+	/>
 </ChartFrame>
 
 <h2>Properties</h2>

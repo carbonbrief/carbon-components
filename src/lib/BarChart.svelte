@@ -1,6 +1,6 @@
 <script>
 	import { scaleLinear, scaleTime, line, extent, area } from 'd3';
-	import {Colours} from '$lib';
+	import { Colours } from '$lib';
 	import LinearAxes from '$lib/LinearAxes.svelte';
 	import Tooltip from '$lib/Tooltip.svelte';
 	import Key from '$lib/SVGKey.svelte';

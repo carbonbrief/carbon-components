@@ -25,30 +25,30 @@
 			<div>
 				<h2>Sections</h2>
 				<ul>
-					<li><a href="https://www.carbonbrief.org/category/science/">Science</a></li>
-					<li><a href="https://www.carbonbrief.org/category/energy/">Energy</a></li>
-					<li><a href="https://www.carbonbrief.org/category/policy/">Policy</a></li>
-					<li><a href="https://www.carbonbrief.org/category/in-focus/">In Focus</a></li>
-					<li><a href="https://www.carbonbrief.org/china-briefing/">China Briefing</a></li>
-					<li><a href="https://www.carbonbrief.org/cropped/">Cropped</a></li>
+					<li><a href="https://www.carbonbrief.org/topic/energy/">Energy</a></li>
+					<li><a href="https://www.carbonbrief.org/topic/nature/">Nature</a></li>
+					<li><a href="https://www.carbonbrief.org/topic/policy/">Policy</a></li>
+					<li><a href="https://www.carbonbrief.org/topic/science/">Science</a></li>
+
 				</ul>
 			</div>
 			<div>
 				<h2>About</h2>
 				<ul>
-					<li><a href="https://www.carbonbrief.org/about-us/" aria-current="page">About Us</a></li>
-					<li><a href="https://www.carbonbrief.org/contact-us/">Contact Us</a></li>
+					<li><a href="https://www.carbonbrief.org/about/" aria-current="page">About us</a></li>
+					<li><a href="https://www.carbonbrief.org/contact/">Contact us</a></li>
+					<li><a href="https://www.carbonbrief.org/support/">Support us</a></li>
 					<li><a href="https://www.carbonbrief.org/newsletter-sign-up/">Newsletters</a></li>
-					<li><a href="https://www.carbonbrief.org/privacy/">Privacy Policy</a></li>
-					<li><a href="https://www.carbonbrief.org/cookies/">Cookie Policy</a></li>
-					<li><a href="https://www.carbonbrief.org/comments-policy/">Comments Policy</a></li>
 				</ul>
 			</div>
 			<div>
 				<h2>Social</h2>
 				<ul>
+				<li>
+						<a target="_blank" rel="noopener" href="https://bsky.app/profile/carbonbrief.org">BlueSky</a>
+					</li>
 					<li>
-						<a target="_blank" rel="noopener" href="https://twitter.com/CarbonBrief">Twitter</a>
+						<a target="_blank" rel="noopener" href="https://x.com/CarbonBrief">X</a>
 					</li>
 					<li>
 						<a target="_blank" rel="noopener" href="https://www.linkedin.com/company/carbon-brief/"
